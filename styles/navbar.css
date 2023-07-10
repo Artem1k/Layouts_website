@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+}
+
+/* CSS styles for center alignment */
+.button-container {
+  display: flex;
+  margin: auto;
+  width: fit-content;
+  background-color: #b7b7b7;
+  font-family: Verdana;
+  font-size: 10px;
+  cursor: context-menu;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.button-container>h2 {
+  border-radius: 0px 0px 0px 10px;
+}
+
+.dropdown:last-child h2 {
+  border-radius: 0px 0px 10px 0px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content a {
+  font-size: 14px;
+}
+
+/* Links inside the dropdown */
+.button-container a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.button-container h2,
+.dropdown-content a {
+  padding: 12px;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.button-container h2:hover,
+.dropdown:hover h2 {
+  background-color: #9f9f9f;
+}
+
+/* Можна забрати цей блок і присвоїти цей атрибут до button-container */
+.button-container>h2,
+.dropdown-content {
+  cursor: pointer;
+}
+
+/* Розміщує випадаючі силки, так як вони були в один рядок */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+}
+
+/* Випадаюче меню */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
